@@ -1,0 +1,51 @@
+/* <div class="a"></div><div class="b"></div><div class="c"></div><div class="d"></div> */
+body {
+    margin: 0;
+    background-color: #F2F2B6;
+}
+
+.a {
+    width: 0;
+    border-bottom: 80px solid transparent;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 130px solid #FF6D00;
+    position: absolute;
+    top: 85px;
+    left: 60px;
+}
+
+.b {
+    width: 0;
+    border-bottom: 80px solid transparent;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-top: 130px solid #FD4602;
+    position: absolute;
+    top: 85px;
+    left: 80px;
+    z-index: -100;
+}
+
+.c {
+    width: 0;
+    border-top: 80px solid transparent;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #FD4602;
+    position: absolute;
+    top: 5px;
+    left: 170px;
+}
+
+.d {
+    width: 0;
+    border-top: 80px solid transparent;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 130px solid #FF6D00;
+    position: absolute;
+    top: 5px;
+    left: 190px;
+    z-index: -100;
+}

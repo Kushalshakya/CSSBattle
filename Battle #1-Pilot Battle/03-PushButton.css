@@ -1,0 +1,39 @@
+/* <div class="outer-box"></div>
+<div class="outer-circle"></div>
+<div class="mid-circle"></div>
+<div class="inner-circle"></div> */
+* {
+    margin: 0;
+    background: #6592CF;
+}
+
+.outer-box {
+    width: 300px;
+    height: 150px;
+    background: #243D83;
+    transform: translate(50px, 75px);
+}
+
+.outer-circle {
+    width: 250px;
+    height: 250px;
+    transform: translate(75px, -125px);
+    border-radius: 50%;
+    background: #6592CF;
+}
+
+.mid-circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #243D83;
+    transform: translate(125px, -325px);
+}
+
+.inner-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #EEB850;
+    transform: translate(175px, -425px);
+}
