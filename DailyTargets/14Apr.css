@@ -1,0 +1,55 @@
+/* <div class="circle">
+  <div class="half-top"></div>
+  <div class="half-right"></div>
+  <div class="half-bottom"></div>
+  <div class="half-left"></div>
+</div> */
+body {
+    display: grid;
+    place-items: center;
+    background: #F7BED9;
+}
+
+.circle {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to right, #EC007B 50%, #9C274E 50%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.circle>div {
+    position: absolute;
+}
+
+.half-top {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent 50%, #9C274E 50%);
+    top: -100px;
+    border-radius: 50%;
+}
+
+.half-bottom {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to top, transparent 50%, #EC007B 50%);
+    top: 100px;
+    border-radius: 50%;
+}
+
+.half-right {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to left, transparent 50%, #EC007B 50%);
+    left: 100px;
+    border-radius: 50%;
+}
+
+.half-left {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(to right, transparent 50%, #9C274E 50%);
+    left: -100px;
+    border-radius: 50%;
+}
