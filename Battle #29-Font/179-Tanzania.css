@@ -1,0 +1,23 @@
+/* <div class="line"></div> */
+* {
+    margin: 0;
+    background: linear-gradient(to bottom right, #14A84A 50%, #3B66B0 50%)
+}
+
+.line {
+    background: #F8CD1E;
+    width: 140px;
+    height: 600px;
+    position: fixed;
+    transform: translate(113px, -140px) rotate(240deg);
+}
+
+.line::after {
+    content: '';
+    width: 100px;
+    height: 600px;
+    position: absolute;
+    background: #000000;
+    top: 0px;
+    left: 20px;
+}
