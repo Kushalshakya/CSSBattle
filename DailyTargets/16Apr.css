@@ -1,0 +1,94 @@
+/* <div class="main">
+  <div class="main-mid"></div>
+  <div class="main-side"></div>
+</div> */
+body {
+    margin: 0;
+    background: #0A6190;
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    border-right: 50px solid #EFF8FE;
+    border-left: 50px solid #EFF8FE;
+    height: 300px;
+    padding: 25px;
+    position: relative;
+}
+
+.main::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #0A6190;
+    top: 50%;
+    left: 70%;
+    transform: translate(50%, -113%);
+    border-radius: 50%;
+}
+
+.main::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: #0A6190;
+    top: 50%;
+    left: -130%;
+    transform: translate(50%, -113%);
+    border-radius: 50%;
+}
+
+.main-mid {
+    position: relative;
+}
+
+.main-mid::after {
+    content: '';
+    background: #EFF8FE;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    top: 55px;
+    left: -20px;
+    width: 40px;
+}
+
+.main-mid::before {
+    content: '';
+    background: #EFF8FE;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    top: 155px;
+    left: -20px;
+    width: 40px;
+}
+
+.main-side {
+    position: relative;
+}
+
+.main-side::after {
+    content: '';
+    background: #EFF8FE;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    top: 105px;
+    left: -120px;
+    width: 40px;
+}
+
+.main-side::before {
+    content: '';
+    background: #EFF8FE;
+    border-radius: 50%;
+    height: 40px;
+    position: absolute;
+    top: 105px;
+    left: 80px;
+    width: 40px;
+}
