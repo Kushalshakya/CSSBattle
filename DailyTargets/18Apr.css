@@ -1,0 +1,37 @@
+/* <div></div> */
+body {
+    margin: 0;
+    background: #611B3F;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: #BE3184;
+    position: relative;
+}
+
+div::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: #BE3184;
+    top: -100px;
+    left: 50px;
+    border-bottom-left-radius: 80px;
+}
+
+div::before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background: #BE3184;
+    bottom: -100px;
+    right: 50px;
+    border-top-right-radius: 80px;
+}
