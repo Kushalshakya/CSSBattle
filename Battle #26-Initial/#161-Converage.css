@@ -1,0 +1,36 @@
+/* <div class="main"></div> */
+/* 99.8% Match */
+body {
+    margin: 0;
+    background: #E3516E;
+    display: grid;
+    place-items: center;
+}
+
+.main {
+    width: 185px;
+    height: 185px;
+    background: #FADE8B;
+    position: relative;
+}
+
+.main::after,
+.main::before {
+    content: '';
+    position: absolute;
+    background: #E3516E;
+    width: 30px;
+    height: 280px;
+}
+
+.main::after {
+    transform: rotate(45deg);
+    left: 41%;
+    top: -25%;
+}
+
+.main::before {
+    transform: rotate(-45deg);
+    left: 42%;
+    top: -25%;
+}
