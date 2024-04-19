@@ -1,0 +1,27 @@
+/* <div class="donut"></div> */
+body {
+    margin: 0;
+    background: #62306D;
+    display: grid;
+    place-items: center;
+}
+
+.donut {
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(#F7EC7D 75%, #E38F66 25%);
+    border-radius: 50%;
+    position: relative;
+}
+
+.donut::before {
+    content: '';
+    background: #62306D;
+    width: 100px;
+    padding: 10px;
+    height: 100px;
+    top: 20%;
+    left: 20%;
+    border-radius: 50%;
+    position: absolute;
+}
