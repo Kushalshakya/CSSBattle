@@ -1,0 +1,77 @@
+/* <div class="overlay"></div>
+<div class="top"></div>
+<div class="bottom"></div>
+<div class="zero1"></div>
+<div class="zero2"></div> */
+body {
+    margin: 0;
+    background: #4F77FF;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    position: absolute;
+}
+
+.top,
+.bottom {
+    width: 60px;
+    height: 40px;
+    border: 20px solid #EFF8FE;
+    left: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+.top {
+    top: 70px;
+}
+
+.bottom {
+    top: 150px;
+}
+
+.zero1,
+.zero2 {
+    width: 40px;
+    height: 120px;
+    border: 20px solid #EFF8FE;
+    border-radius: 100px;
+}
+
+.zero2 {
+    right: 60px;
+}
+
+.overlay {
+    width: 20px;
+    position: relative;
+    left: -150px;
+    height: 160px;
+    z-index: 1;
+    background: #4F77FF;
+}
+
+.overlay::after,
+.overlay:before {
+    position: absolute;
+    content: '';
+    background: #4F77FF;
+    width: 60px;
+    height: 40px;
+    padding-bottom: 10px;
+    left: 20px;
+}
+
+.overlay::after {
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 27px;
+    top: 20px;
+}
+
+.overlay::before {
+    bottom: 20px;
+    border-top-right-radius: 26px;
+    border-bottom-right-radius: 27px;
+}
