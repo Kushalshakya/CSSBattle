@@ -1,0 +1,38 @@
+/* <div></div>
+<div></div>
+<div></div>
+<div></div>
+<div class="overlay"></div> */
+body {
+    margin: 0;
+    background: #F48B26;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+div:not(.overlay) {
+    width: 60px;
+    height: 150px;
+    background: #FEFF58;
+    border-radius: 20px 20px 0 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 195px;
+    width: 180px;
+    height: 30px;
+    background: linear-gradient(to right,
+            #F48B26 0%,
+            #F48B26 22%,
+            #FEFF58 22%,
+            #FEFF58 39%,
+            #F48B26 39%,
+            #F48B26 61%,
+            #FEFF58 61%,
+            #FEFF58 78%,
+            #F48B26 78%,
+            #F48B26 100%,
+            #F48B26 100%);
+}
