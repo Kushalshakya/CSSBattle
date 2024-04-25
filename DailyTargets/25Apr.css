@@ -1,0 +1,45 @@
+/* <div class="overlay">
+  <div class="right"></div>
+  <div class="left"></div>
+  <div class="line"></div>
+</div> */
+body {
+    margin: 0;
+    background: #223E1F;
+    display: grid;
+    place-items: center;
+}
+
+.overlay {
+    position: relative;
+    width: 400px;
+}
+
+.overlay>div {
+    position: absolute;
+    background: #BFE33A;
+}
+
+.left {
+    width: 90px;
+    height: 300px;
+    top: -96px;
+    left: 60px;
+    transform: rotate(60deg);
+    border-radius: 40px;
+}
+
+.right {
+    width: 90px;
+    height: 300px;
+    top: -96px;
+    right: 60px;
+    transform: rotate(-60deg);
+    border-radius: 40px;
+}
+
+.line {
+    width: 90px;
+    height: 150px;
+    left: 155px;
+}
