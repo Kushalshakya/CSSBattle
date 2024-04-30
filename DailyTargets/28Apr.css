@@ -1,0 +1,38 @@
+/* <div class="circle"></div> */
+body {
+    margin: 0;
+    background: #0A6190;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    width: 100px;
+    border-radius: 50%;
+    height: 100px;
+    position: relative;
+    background: #EFF8FE;
+}
+
+.circle::after,
+.circle::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 175px;
+    background: #EFF8FE;
+}
+
+.circle::after {
+    top: -100px;
+    left: -70px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.circle::before {
+    bottom: -100px;
+    right: -70px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
