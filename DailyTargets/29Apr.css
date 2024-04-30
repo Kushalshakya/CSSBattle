@@ -1,0 +1,31 @@
+/* <div class="left"></div>
+<div class="right"></div>
+<div class="bottom"></div> */
+body {
+    margin: 0;
+    background: #631E1D;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    width: 30px;
+    height: 250px;
+    background: #F16B4A;
+    position: absolute;
+}
+
+.left {
+    left: 145px;
+    transform: rotate(30deg);
+}
+
+.right {
+    right: 145px;
+    transform: rotate(-30deg);
+}
+
+.bottom {
+    bottom: -45px;
+    transform: rotate(90deg);
+}
