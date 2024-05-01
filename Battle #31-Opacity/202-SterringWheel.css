@@ -1,0 +1,56 @@
+/* <div class="circle">
+  <div class="sterring"></div>
+  <div class="line"></div>
+</div> */
+body {
+    margin: 0;
+    display: grid;
+    background: #4F77FF;
+    place-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border: 30px solid #1038BF;
+}
+
+.sterring {
+    width: 150px;
+    height: 90px;
+    background: #1038BF;
+    top: 32px;
+    border-radius: 0 0 12px 12px;
+    left: -25px;
+    position: relative;
+}
+
+.line {
+    width: 30px;
+    height: 40px;
+    background: #4F77FF;
+    transform: translate(35px, -140px);
+}
+
+.sterring::after,
+.sterring::before {
+    position: absolute;
+    content: '';
+    top: 30px;
+    background: #4F77FF;
+    width: 56px;
+    height:
+        55px;
+}
+
+.sterring::after {
+    left: 5px;
+    border-radius: 0 45px 0px 250px;
+}
+
+.sterring::before {
+    right: 3px;
+    border-radius: 45px 0 250px 0;
+}
