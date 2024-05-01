@@ -1,0 +1,39 @@
+/* <div></div> */
+body {
+    margin: 0;
+    background: #6592CF;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    width: 250px;
+    height: 250px;
+    background: #243D83;
+    position: relative;
+}
+
+div::after,
+div::before {
+    content: '';
+    position: absolute;
+}
+
+div::after {
+    background: #6592CF;
+    width: 150px;
+    height: 150px;
+    left: 20%;
+    top: 20%;
+    transform: rotate(15deg);
+}
+
+div::before {
+    background: #243D83;
+    width: 75px;
+    height: 75px;
+    left: 35%;
+    top: 35%;
+    z-index: 1;
+    transform: rotate(30deg);
+}
