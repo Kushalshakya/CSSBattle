@@ -1,0 +1,40 @@
+/* <div class="circle">
+  <div class="small-box"></div>
+  <div class="big-box"></div>
+</div> */
+body {
+    margin: 0;
+    background: #293462;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background: #FFF1C1;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.circle>div {
+    position: absolute;
+    background: #FE5F55;
+}
+
+.small-box {
+    width: 40px;
+    height: 40px;
+    bottom: 23px;
+    left: 9px;
+    transform: rotate(45deg);
+}
+
+.big-box {
+    width: 125px;
+    height: 160px;
+    bottom: -40px;
+    left: 67px;
+    transform: rotate(45deg);
+}
