@@ -1,0 +1,27 @@
+/* <div class="first"></div>
+<div class="second"></div>
+<div class="third"></div>
+<div class="fourth"></div> */
+* {
+    margin: 0;
+}
+
+.first {
+    height: 50px;
+    background: #F7EC7D;
+}
+
+.second {
+    height: 50px;
+    background: #E38F66;
+}
+
+.third {
+    height: 100px;
+    background: #AA445F;
+}
+
+.fourth {
+    height: 100px;
+    background: #62306D;
+}
