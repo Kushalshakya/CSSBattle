@@ -1,0 +1,38 @@
+/* <div></div> */
+/* Z-Index not working as expected */
+body {
+    margin: 0;
+    background: #926927;
+    display: grid;
+    place-items: center;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    border-radius: 100% 0%;
+    transform: rotate(135deg);
+}
+
+div::after,
+div::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 0%;
+    background: #6D480A;
+}
+
+div::after {
+    transform: rotate(135deg);
+    top: 20px;
+    left: 50px;
+}
+
+div::before {
+    transform: rotate(-135deg);
+    top: -50px;
+    right: 20px;
+}
