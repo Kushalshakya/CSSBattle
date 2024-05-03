@@ -1,0 +1,24 @@
+/* <div class="lamb"></div>
+<div class="line"></div> */
+body {
+    display: grid;
+    margin: 0;
+    background: #E38F66;
+    place-items: center;
+}
+
+.lamb {
+    width: 125px;
+    height: 120px;
+    background: #FFFBDA;
+    clip-path: polygon(25% 0%, 75% 0%, 101% 100%, 0% 100%);
+}
+
+.line {
+    position: absolute;
+    width: 10px;
+    height: 90px;
+    background: #62306D;
+    left: 195px;
+    bottom: 0;
+}
