@@ -1,0 +1,23 @@
+/* <div class="left"></div>
+<div class="right"></div> */
+body {
+    margin: 0;
+    background: #F59426;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+}
+
+div {
+    width: 120px;
+    height: 150px;
+    margin: 5px;
+}
+
+.left {
+    background: linear-gradient(#FFF 0%, #FFF 33.5%, #F59426 33.5%, #F59426 40%, #FFF 40%, #FFF 100%);
+}
+
+.right {
+    background: linear-gradient(#FFF 0%, #FFF 60%, #F59426 60%, #F59426 66.5%, #FFF 66.5%, #FFF 100%);
+}
