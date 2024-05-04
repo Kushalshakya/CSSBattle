@@ -1,0 +1,36 @@
+/* <div class="circle">
+  <div class="inner-circle"></div>
+  <div class="line"></div>
+</div> */
+body {
+    margin: 0;
+    background: #B53733;
+    display: grid;
+    place-items: center;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: #EA7457;
+}
+
+.inner-circle {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: #EA7457;
+    border: 20px solid #B53733;
+    transform: translate(25px, 25px);
+}
+
+.line {
+    width: 45px;
+    height: 310px;
+    padding: 0 8px 0 7px;
+    transform: translate(25px, 25px);
+    background: #EA7457;
+    border: 20px solid #B53733;
+    transform: translate(75px, -250px);
+}
