@@ -1,0 +1,38 @@
+/* <div class="line"></div>
+<div class="box"></div>
+<div class="home"></div> */
+body {
+    margin: 0;
+    background: #F7BED9;
+    display: grid;
+    place-items: center;
+}
+
+.line {
+    transform: translateY(25px);
+    width: 400px;
+    height: 50px;
+    background: #EC007B;
+}
+
+.box,
+.home {
+    position: absolute;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 30px solid #EC007B;
+    background: #F7BED9;
+    left: 145px;
+    top: 120px;
+}
+
+.home {
+    width: 110px;
+    height: 80px;
+    top: 70px;
+    background: #9C274E;
+    clip-path: polygon(50% 0%, 100% 62%, 100% 100%, 0 100%, 0 62%);
+}
