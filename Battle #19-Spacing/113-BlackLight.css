@@ -1,0 +1,13 @@
+/* <div></div> */
+* {
+    margin: 0;
+    background: #5776F6;
+}
+
+div {
+    width: 25em;
+    height: 100px;
+    transform: translateY(100px);
+    background: #191919;
+    clip-path: polygon(0 25%, 100% 0, 100% 100%, 0 75%);
+}
