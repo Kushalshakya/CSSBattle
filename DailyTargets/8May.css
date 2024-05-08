@@ -1,0 +1,23 @@
+/* <div class="container">
+  <div class="circle"></div>
+  <div class="circle"></div>
+</div> */
+* {
+    background: #FEFF58;
+    margin: 0;
+}
+
+.container {
+    transform: translateY(100px);
+    width: 400px;
+    height: 200px;
+    background: #F48B26;
+    display: flex;
+}
+
+.circle {
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+    background: #FEFF58;
+}
