@@ -1,0 +1,32 @@
+/* <div class="top-left"></div>
+<div class="top-right"></div>
+<div class="bottom-left"></div> */
+* {
+    margin: 0;
+    background: #D669EC;
+}
+
+div {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    background: #FDFBF8;
+    clip-path: polygon(0 0, 54% 0%, 100% 46%, 100% 100%, 46% 100%, 0% 54%);
+}
+
+.top-left {
+    left: 90px;
+    top: 40px;
+}
+
+.top-right {
+    right: 90px;
+    top: 40px;
+    transform: rotate(90deg);
+}
+
+.bottom-left {
+    top: 160px;
+    left: 90px;
+    transform: rotate(90deg);
+}
