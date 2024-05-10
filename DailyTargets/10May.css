@@ -1,0 +1,49 @@
+/* <div class="container">
+  <div class="box"></div>
+</div> */
+body {
+    background: #512B2A;
+    margin: 0;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 200px;
+    height: 120px;
+    background: #EA6B62;
+    position: relative;
+    border-radius: 20px;
+}
+
+.container::after,
+.container::before {
+    content: '';
+    position: absolute;
+}
+
+.container::after {
+    background: #EA6B62;
+    width: 60px;
+    height: 40px;
+    left: 30px;
+    bottom: -40px;
+    clip-path: polygon(0 0, 0% 100%, 65% 0);
+}
+
+.container::before {
+    background: #512B2A;
+    width: 60px;
+    height: 40px;
+    left: 110px;
+    top: 40px;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+}
+
+.box {
+    width: 100px;
+    height: 60px;
+    background: #512B2A;
+    border-radius: 10px;
+    transform: translate(30px, 30px);
+}
