@@ -1,0 +1,38 @@
+/* <div class="horizontal"></div>
+<div class="vertical"></div> */
+body {
+    margin: 0;
+}
+
+div {
+    background: #E8112D;
+    position: absolute;
+}
+
+.horizontal {
+    left: 160px;
+    width: 80px;
+    height: 300px;
+}
+
+.vertical {
+    width: 3400px;
+    height: 80px;
+    top: 110px;
+}
+
+.vertical::after,
+.vertical::before {
+    content: '';
+    position: absolute;
+    background: #F9DD16;
+    width: 230px;
+    height: 40px;
+    clip-path: polygon(6% 24%, 94% 25%, 100% 0, 100% 100%, 94% 76%, 7% 74%, 0 100%, 0 0);
+    top: 20px;
+    left: 85px;
+}
+
+.vertical::before {
+    transform: rotate(90deg);
+}
