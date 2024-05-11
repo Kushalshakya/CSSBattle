@@ -1,0 +1,22 @@
+/* <div></div> */
+* {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #998235;
+}
+
+div {
+    width: 212px;
+    height: 212px;
+    background: linear-gradient(135deg,
+        #998235 0, #998235 150px,
+        #FCBE5C 150px, #FCBE5C 175px,
+        #0B2429 175px, #0B2429 200px,
+        #998235 200px, #998235 225px,
+        #FCBE5C 225px, #FCBE5C 250px,
+        #0B2429 250px, #0B2429 275px,
+        #998235 275px, #998235 300px
+    );
+}
