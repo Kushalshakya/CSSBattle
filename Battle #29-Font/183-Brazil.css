@@ -1,0 +1,35 @@
+/* <div class="overlay"></div>
+<div class="circle"></div> */
+body {
+    margin: 0;
+    background: #009B3A;
+    display: grid;
+    place-items: center;
+}
+
+.overlay {
+    width: 300px;
+    height: 200px;
+    background: #FEDF00;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: #002776;
+    position: absolute;
+    overflow: hidden;
+}
+
+.circle::before {
+    content: '';
+    position: absolute;
+    left: -80px;
+    bottom: -130px;
+    border: 10px solid #fff;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
