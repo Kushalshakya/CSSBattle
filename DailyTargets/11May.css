@@ -1,0 +1,43 @@
+/* <div class="container">
+  <div class="left"></div>
+  <div class="mid"></div>
+  <div class="right"></div>
+</div> */
+body {
+    margin: 0;
+    background: #223E1F;
+    display: grid;
+    place-items: center;
+}
+
+.container {
+    width: 300px;
+    height: 100px;
+    background: #BFE33A;
+}
+
+.container>div {
+    height: 50px;
+    width: 20px;
+    top: 150px;
+    position: absolute;
+}
+
+.left,
+.right {
+    border-left: 20px solid #223E1F;
+    border-right: 20px solid #223E1F;
+}
+
+.left {
+    left: 70px;
+}
+
+.mid {
+    left: 190px;
+    background: #223E1F;
+}
+
+.right {
+    left: 270px;
+}
