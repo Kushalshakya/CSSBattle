@@ -1,0 +1,47 @@
+/* <div class="circle">
+  <div class="mid"></div>
+  <div class="line1"></div>
+  <div class="line2"></div>
+  <div class="line3"></div>
+</div> */
+body {
+    margin: 0;
+    display: grid;
+    background: linear-gradient(#F19E4B 0px, #F19E4B 100px, #FFFFFF 100px, #FFFFFF 200px, #3F8627 30px);
+    place-items: center;
+}
+
+.circle>div {
+    background: #00007B;
+}
+
+.circle>div:not(.mid) {
+    width: 4px;
+    height: 60px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border: 10px solid #00007B;
+    border-radius: 50%;
+}
+
+.mid {
+    width: 20px;
+    height: 20px;
+    transform: translate(20px, 20px);
+    border-radius: 50%;
+}
+
+.line1 {
+    transform: translate(28px, -20px);
+}
+
+.line2 {
+    transform: translate(28px, -80px) rotate(-60deg);
+}
+
+.line3 {
+    transform: translate(28px, -140px) rotate(60deg);
+}
