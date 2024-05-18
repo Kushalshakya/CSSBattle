@@ -1,0 +1,36 @@
+/* <div class="a">
+</div><div class="b"></div>
+<div class="c"></div> */
+* {
+    margin: 0;
+    background: #D25B70;
+}
+
+.a {
+    width: 60px;
+    height: 60px;
+    background: #6CB3A9;
+    position: fixed;
+    top: 78px;
+    left: 114px;
+    transform: rotate(-53deg);
+}
+
+.b {
+    width: 80px;
+    height: 80px;
+    background: #F6DF96;
+    transform: rotate(-53deg);
+    position: fixed;
+    top: 54px;
+    left: 202px;
+}
+
+.c {
+    width: 100px;
+    height: 100px;
+    background: #F7F3DA;
+    position: fixed;
+    top: 150px;
+    left: 150px;
+}
