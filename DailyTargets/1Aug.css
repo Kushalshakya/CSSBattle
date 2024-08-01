@@ -1,0 +1,15 @@
+/* <div class="top"></div>
+<div class="bottom"></div> */
+* {
+    background: #301E53;
+}
+div {
+    width: 100px;
+    height: 100px;
+    background: #766D94;
+    transform: translate(42px, 42px);
+    clip-path: polygon(100% 0, 100% 50%, 50% 50%, 50% 100%, 0 100%, 0 0);
+}
+.bottom {
+    transform: translate(242px, 42px) rotate(180deg);
+}
