@@ -1,0 +1,32 @@
+<div class="center"></div>
+<div class="overlay1 overlay"></div>
+<div class="overlay2 overlay"></div>
+<style>
+  body{
+    margin:0;
+    background: #62306D;
+  }
+  div{
+    position: fixed;
+  }
+  .center {
+    width: 160px;
+    height: 140px;
+    top: 80px;
+    left: 120px;
+    background: #E38F66;
+  }
+  .overlay{
+    background: #AA445F;
+    width: 180px;
+    height: 130px;
+    z-index: -1;
+  }
+  .overlay1{
+    right: 0;
+  }
+  .overlay2{
+    bottom: 0;
+  }
+  
+</style>
