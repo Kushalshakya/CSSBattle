@@ -1,0 +1,15 @@
+<div></div>
+<style>
+  body {
+    margin: 0;
+    background: #EBE77E;
+    display: grid;
+    place-content: center;
+  }
+  div {
+    width: 220px;
+    height: 140px;
+    background: #DE817E;
+    clip-path: polygon(27% 0%, 100% 0, 73% 50%, 100% 100%, 27% 100%, 0% 50%);
+  }
+</style>
